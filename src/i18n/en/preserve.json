@@ -1,0 +1,234 @@
+{
+  "openSettings": "Open settings",
+  "retry": "Try again",
+  "header": { "close": "Leave without sealing", "reopened": "REOPENED" },
+  "edit": {
+    "loading": "Opening the relic…",
+    "error": "The relic wouldn't open. Check your signal and try again.",
+    "gone": "This relic has been released."
+  },
+  "hand": {
+    "heading": "What's in your hand?",
+    "sub": "Hold something from the past. The rest can come later.",
+    "prompt": "Keeper's prompt",
+    "words": { "title": "Words", "hint": "Write it down, or speak it and watch it appear." },
+    "voice": { "title": "Voice", "hint": "A minute of sound, kept in a shell." },
+    "photo": { "title": "Photo", "hint": "A plate, developed out of the dark." }
+  },
+  "vessel": {
+    "letter": "Folded letter",
+    "plate": "Glass plate",
+    "shell": "Echo shell",
+    "map": "Map shard",
+    "locket": "Locket",
+    "reel": "Reel canister",
+    "inlaid": "Inlaid with {{list}}."
+  },
+  "inlay": {
+    "words": "words",
+    "voice": "a voice",
+    "photo": "photos",
+    "place": "a place",
+    "people": "names",
+    "link": "a reel"
+  },
+  "letter": {
+    "titlePlaceholder": "Give it a name, if it has one",
+    "titleLabel": "Title",
+    "bodyLabel": "The letter",
+    "bodyPlaceholder": "Begin anywhere. Write it the way it comes back to you.",
+    "before": "The Before"
+  },
+  "speak": {
+    "label": "Speak into the letter",
+    "hint": "Press and hold to speak and release to stop, or tap once to start and tap again to stop.",
+    "idle": "Hold to speak",
+    "listening": "Listening",
+    "problem": {
+      "denied": "The microphone stayed closed. Hold the mic again and allow it, or write by hand.",
+      "blocked": "Relic can't use the microphone. You can open it in settings.",
+      "unavailable": "Speech to text isn't available on this phone. You can still write, or keep your voice as a recording.",
+      "network": "Speech needs a signal on this phone. Write by hand, or try again when you're connected.",
+      "noSpeech": "Nothing came through. Hold the mic closer and try again.",
+      "failed": "The microphone slipped. Try again."
+    }
+  },
+  "voice": {
+    "title": "Voice",
+    "idle": "Up to one minute. Tap to begin, tap to stop.",
+    "recording": "Recording. Tap to stop.",
+    "blocked": "Finish speaking into the letter first.",
+    "record": "Record your voice",
+    "recordHint": "Records up to one minute",
+    "stop": "Stop recording",
+    "play": "Play the recording",
+    "pause": "Pause the recording",
+    "again": "Record again",
+    "remove": "Remove",
+    "kept": "This relic already keeps its echo.",
+    "problem": {
+      "denied": "The microphone stayed closed. Allow it to record your voice.",
+      "blocked": "Relic can't use the microphone. You can open it in settings.",
+      "failed": "The recording slipped. Try again.",
+      "tooShort": "That was too short to keep. Try again."
+    }
+  },
+  "photos": {
+    "title": "Plates · {{n}} of {{max}}",
+    "add": "Add a photo",
+    "camera": "Camera",
+    "library": "Library",
+    "developing": "Developing",
+    "remove": "Remove photo {{n}}",
+    "plate": "Photo {{n}}",
+    "kept": "Photo {{n}}, already kept",
+    "full": "A relic holds {{max}} plates, no more.",
+    "problem": {
+      "cameraDenied": "The camera stayed closed. Allow it to take a photo.",
+      "cameraBlocked": "Relic can't use the camera. You can open it in settings.",
+      "failed": "That photo wouldn't develop. Try another."
+    }
+  },
+  "add": { "photo": "Add a photo", "voice": "Add a voice" },
+  "facet": {
+    "when": "When",
+    "where": "Where",
+    "who": "Who",
+    "weight": "Weight",
+    "light": "Light",
+    "link": "Link",
+    "seal": "Seal until"
+  },
+  "drawer": {
+    "done": "Done",
+    "when": { "title": "When did it happen?", "hint": "Scrub back as far as it goes. Anything before you joined belongs to The Before." },
+    "where": { "title": "Where were you?", "hint": "A place, a street, a room. Or let the phone tell you." },
+    "who": { "title": "Who was there?", "hint": "Names stay in your vault. Nobody is told." },
+    "weight": { "title": "How heavy does it sit?", "hint": "Drag between a feather and a stone." },
+    "light": { "title": "Which lamp lights it?", "hint": "The lamp tints the relic's glow." },
+    "link": { "title": "A video, kept as a reel", "hint": "Relic keeps the link, not the video." },
+    "seal": { "title": "Seal it until…", "hint": "A letter to whoever you'll be then." }
+  },
+  "summary": {
+    "today": "Today",
+    "links_one": "{{count}} reel",
+    "links_other": "{{count}} reels"
+  },
+  "when": {
+    "label": "Date of the memory",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago",
+    "monthsAgo_one": "{{count}} month ago",
+    "monthsAgo_other": "{{count}} months ago",
+    "yearsAgo_one": "{{count}} year ago",
+    "yearsAgo_other": "{{count}} years ago",
+    "before": "The Before",
+    "unregistered": "An unregistered relic. Nobody up there will know it was ever kept. Down here, it is."
+  },
+  "date": {
+    "hint": "Drag the ruler. Month and year marks carry their names.",
+    "yearBack": "Year back",
+    "monthBack": "Month back",
+    "today": "Today",
+    "monthOn": "Month on",
+    "yearOn": "Year on"
+  },
+  "where": {
+    "label": "Place",
+    "placeholder": "A place, a street, a room",
+    "here": "Use where I am now",
+    "hereHint": "Reads your location once and names the place",
+    "locating": "Finding the spot…",
+    "pinned": "Coordinates are kept with the name.",
+    "problem": {
+      "denied": "Location stayed closed. Allow it, or type the place by hand.",
+      "blocked": "Relic can't read your location. You can open it in settings.",
+      "off": "Location is switched off on this phone. Type the place by hand.",
+      "unnamed": "Pinned the spot, but it has no name yet. Give it one to keep it.",
+      "failed": "Couldn't find the spot. Type the place by hand."
+    }
+  },
+  "who": {
+    "label": "Add a name",
+    "placeholder": "Add a name",
+    "add": "Add “{{name}}”",
+    "pick": "Add {{name}}",
+    "remove": "Remove {{name}}",
+    "private": "Names stay in your vault. Nobody is told.",
+    "empty": "The people you keep will gather here.",
+    "loading": "Looking for the names you've kept…"
+  },
+  "weight": {
+    "label": "Weight of the memory",
+    "feather": "Feather",
+    "stone": "Stone",
+    "effect": "Heavier relics glow larger in the Vault and surface more often.",
+    "step": { "1": "A feather", "2": "Light", "3": "Steady", "4": "Heavy", "5": "A stone" }
+  },
+  "mood": {
+    "label": "Lamp",
+    "ember": "Ember",
+    "honey": "Honey",
+    "moss": "Moss",
+    "tide": "Tide",
+    "dusk": "Dusk",
+    "ash": "Ash"
+  },
+  "link": {
+    "label": "Video link",
+    "placeholder": "https://…",
+    "add": "Add reel",
+    "reel": "Reel",
+    "remove": "Remove link to {{host}}",
+    "full": "A relic holds {{max}} reels, no more.",
+    "hint": "Only secure links (https) are kept. They open outside Relic.",
+    "problem": {
+      "insecure": "Only secure links starting with https:// can go on a reel.",
+      "invalid": "That doesn't look like a link.",
+      "duplicate": "That reel is already here."
+    }
+  },
+  "seal": {
+    "label": "Seal this relic",
+    "hint": "Press and hold for about a second to seal it.",
+    "hold": "Hold to seal",
+    "holding": "Keep holding…",
+    "needSomething": "Put something in your hand first.",
+    "developing": "The plates are still developing.",
+    "micBusy": "Finish speaking first.",
+    "overQuota": "Your vault is too full for these plates.",
+    "rests": "The vault rests until tomorrow.",
+    "sealing": "Sealing it. The Vault is receiving your relic.",
+    "carrying_one": "Carrying one piece of it down the shaft…",
+    "carrying_other": "Carrying {{count}} pieces of it down the shaft…",
+    "kept": "Kept.",
+    "choose": "Choose a day",
+    "explain": "A sealed relic stays closed, even to you, until that day. A letter to whoever you'll be then.",
+    "remove": "Remove the seal",
+    "stays": "Stays closed until then",
+    "dateLabel": "Seal until",
+    "month": "In a month",
+    "year": "In a year",
+    "five": "In five years",
+    "ten": "In ten years"
+  },
+  "problem": {
+    "daily_limit": "Five relics today. The vault rests until tomorrow.",
+    "photo_limit": "A relic holds five plates, no more. Take one away and try again.",
+    "voice_limit": "A relic holds one voice. This one already keeps its echo.",
+    "voice_too_long": "A voice relic holds a single minute. This one ran long; record it again.",
+    "profile_missing": "Your vault isn't ready yet. Give it a moment, then hold the seal again.",
+    "quota": "Your vault's lamp-oil is spent. The free vault holds 500 MB; release an older relic or take a plate away to make room.",
+    "session": "Your session ended. Sign in again to keep this relic.",
+    "offline": "No signal down here. Your letter is safe on this phone; hold the seal again when you're connected.",
+    "unknown": "Something slipped on the way down. Your letter is safe; hold the seal to try again."
+  },
+  "leave": {
+    "title": "Leave it unsealed?",
+    "body": "This relic hasn't been kept yet. If you leave now, what you've added here is let go.",
+    "keep": "Keep working",
+    "letGo": "Let it go"
+  }
+}

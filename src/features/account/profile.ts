@@ -12,6 +12,7 @@ export type Profile = {
   plan: "free" | "premium";
   notification_prefs: Record<string, unknown>;
   onboarded_at: string | null;
+  created_at: string;
 };
 
 export function deviceTimeZone(): string {
