@@ -1,0 +1,90 @@
+{
+  "vessel": {
+    "letter": "Folded letter",
+    "plate": "Glass plate",
+    "shell": "Echo shell",
+    "map": "Map shard",
+    "locket": "Locket",
+    "reel": "Reel canister"
+  },
+  "hero": {
+    "hint": "Drag to catch the light",
+    "a11y": "{{vessel}}, the vessel holding this relic",
+    "a11yHint": "Drag sideways to tilt it and catch the light."
+  },
+  "section": {
+    "plates": "Plates",
+    "voice": "Voice",
+    "people": "In the locket",
+    "place": "Place",
+    "links": "Reels"
+  },
+  "catalog": {
+    "date": "Date",
+    "depth": "Depth",
+    "place": "Place",
+    "people": "People",
+    "vessel": "Vessel",
+    "status": "Status",
+    "sealedOn": "Sealed",
+    "opens": "Opens",
+    "sealedValue": "Sealed"
+  },
+  "photos": {
+    "plate": "Photograph {{n}} of {{total}}",
+    "open": "Opens it full screen.",
+    "close": "Closes the full screen view.",
+    "closeLabel": "Close",
+    "counter": "{{n}} / {{total}}",
+    "failed": "The plates would not come up out of the dark. Check your signal and try again."
+  },
+  "voice": {
+    "play": "Play the recording",
+    "pause": "Pause the recording",
+    "position": "Recording position",
+    "failed": "This recording would not play. Try again in a moment.",
+    "preparing": "Winding the recording",
+    "urlFailed": "The recording could not be fetched. Check your signal and try again."
+  },
+  "people": {
+    "open_one": "{{name}}, {{count}} relic. Shows it in the vault.",
+    "open_other": "{{name}}, {{count}} relics. Shows them in the vault.",
+    "only": "{{name}}, only in this relic so far",
+    "count_one": "{{count}} relic with {{name}}",
+    "count_other": "{{count}} relics with {{name}}",
+    "onlyHere": "Only here so far"
+  },
+  "place": {
+    "open_one": "{{name}}, {{count}} relic. Shows it in the vault.",
+    "open_other": "{{name}}, {{count}} relics. Shows them in the vault.",
+    "only": "{{name}}, only in this relic so far",
+    "count_one": "{{count}} relic from here",
+    "count_other": "{{count}} relics from here",
+    "onlyHere": "Only here so far"
+  },
+  "links": {
+    "open": "Open {{name}} outside Relic",
+    "outside": "opens outside Relic",
+    "failed": "That link would not open."
+  },
+  "sealed": {
+    "title": "Sealed relic",
+    "a11y": "Sealed. Opens in {{days}} days, on {{date}}.",
+    "countdown_one": "{{count}} day",
+    "countdown_other": "{{count}} days",
+    "until": "Opens {{date}}",
+    "note": "You sealed this for a later version of yourself. The vault will keep it dark until then."
+  },
+  "actions": {
+    "share": "Share",
+    "reopen": "Reopen",
+    "release": "Release"
+  },
+  "released": "Released. It rests for 30 days before it is gone.",
+  "releaseFailed": "That relic could not be released. It is still in your vault.",
+  "missing": {
+    "title": "This relic isn't here",
+    "offlineTitle": "No signal down here",
+    "body": "It may have been released. Return to the vault and keep looking."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "level": "LEVEL {{n}}",
+  "levelCount_one": "{{count}} relic",
+  "levelCount_other": "{{count}} relics",
+  "vessel": {
+    "letter": "Folded letter",
+    "plate": "Glass plate",
+    "shell": "Echo shell",
+    "map": "Map shard",
+    "locket": "Locket",
+    "reel": "Reel canister"
+  },
+  "mood": {
+    "ember": "Ember",
+    "honey": "Honey",
+    "moss": "Moss",
+    "tide": "Tide",
+    "dusk": "Dusk",
+    "ash": "Ash"
+  },
+  "date": {
+    "full": "{{day}} {{month}} {{year}}",
+    "monthYear": "{{month}} {{year}}",
+    "month": {
+      "1": "JAN",
+      "2": "FEB",
+      "3": "MAR",
+      "4": "APR",
+      "5": "MAY",
+      "6": "JUN",
+      "7": "JUL",
+      "8": "AUG",
+      "9": "SEP",
+      "10": "OCT",
+      "11": "NOV",
+      "12": "DEC"
+    }
+  },
+  "sealed": {
+    "title": "Sealed relic",
+    "opens": "Opens {{date}}"
+  },
+  "greeting": {
+    "keeper": "Keeper",
+    "morning": "Good morning, {{name}}.",
+    "afternoon": "Good afternoon, {{name}}.",
+    "evening": "Good evening, {{name}}.",
+    "night": "The lamps are low, {{name}}."
+  },
+  "header": {
+    "kept_one": "{{count}} relic kept",
+    "kept_other": "{{count}} relics kept",
+    "today": "{{count}} of {{limit}} today",
+    "todayOpen_one": "{{count}} relic today",
+    "todayOpen_other": "{{count}} relics today",
+    "sealsA11y": "{{count}} of {{limit}} relics kept today"
+  },
+  "gauge": {
+    "label": "LEVEL {{level}} · {{month}}",
+    "a11y": "Depth gauge. Level {{level}}, {{month}}.",
+    "hint": "Opens a list of levels to descend to."
+  },
+  "levels": {
+    "title": "Descend to a level",
+    "close": "Close the level list",
+    "a11y": "Level {{level}}, {{month}}, {{count}} relics"
+  },
+  "filters": {
+    "title": "Sift the vault",
+    "open": "Sift the vault",
+    "openActive": "Sift the vault, filters are on",
+    "close": "Close",
+    "searchPlaceholder": "Words, names, places",
+    "searchLabel": "Search your relics",
+    "person": "Who",
+    "place": "Where",
+    "mood": "Light",
+    "vessel": "Vessel",
+    "more": "More",
+    "fewer": "Fewer",
+    "clear": "Clear",
+    "show_one": "Show {{count}} relic",
+    "show_other": "Show {{count}} relics"
+  },
+  "summary": {
+    "someone": "someone",
+    "person_one": "{{count}} relic with {{name}}",
+    "person_other": "{{count}} relics with {{name}}",
+    "place_one": "{{count}} relic from {{place}}",
+    "place_other": "{{count}} relics from {{place}}",
+    "query_one": "{{count}} relic matches “{{q}}”",
+    "query_other": "{{count}} relics match “{{q}}”",
+    "sifted_one": "{{count}} relic matches",
+    "sifted_other": "{{count}} relics match"
+  },
+  "loading": {
+    "text": "Unearthing your vault",
+    "a11y": "Loading your vault"
+  },
+  "empty": {
+    "title": "Your first relic belongs here.",
+    "body": "A word, a voice, a photograph. Keep one thing and the vault begins.",
+    "cta": "Preserve a relic",
+    "imageAlt": "An empty niche in the vault wall, lit by a single lamp"
+  },
+  "error": {
+    "offlineTitle": "No signal down here",
+    "title": "The shaft is quiet",
+    "body": "We couldn't reach your vault just now. It is still down there. Try again in a moment."
+  },
+  "noMatch": {
+    "title": "Nothing in the dark matches",
+    "body": "Try fewer words, or clear the filters to see everything you've kept.",
+    "clear": "Show everything"
+  },
+  "footer": {
+    "end": "That is everything you have kept."
+  },
+  "a11y": {
+    "relic": "{{title}}, {{vessel}}, {{date}}",
+    "sealedRelic": "Sealed relic, opens {{date}}",
+    "openHint": "Opens the relic. Press and hold to lift it for a peek.",
+    "level": "Level {{level}}, {{month}}, {{count}} relics"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Share this relic",
+  "subtitle": "Made here, on your phone. Nothing is uploaded.",
+  "close": "Close",
+  "card": {
+    "kept": "kept in Relic",
+    "number": "Nº {{n}}",
+    "a11y": "Preview of the share card"
+  },
+  "style": {
+    "label": "Card style",
+    "plate": "Plate",
+    "letter": "Letter",
+    "letterNeedsWords": "Add words to share this relic as a letter."
+  },
+  "image": {
+    "label": "Card image",
+    "photo": "Photograph",
+    "art": "Relic art"
+  },
+  "actions": {
+    "share": "Share",
+    "preparing": "Developing the card",
+    "sharing": "Sharing"
+  },
+  "dialogTitle": "Share your relic",
+  "errors": {
+    "capture": "The card would not develop. Try again.",
+    "unavailable": "Sharing isn't available on this device."
+  },
+  "sealed": {
+    "title": "Sealed relics stay in the vault",
+    "body": "This relic is sealed until {{date}}. Share it once it opens, when it is yours to show again."
+  }
+}
