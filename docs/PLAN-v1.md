@@ -1,6 +1,6 @@
 # Relic v1 — Build Plan
 
-Agents tick each box as soon as the item is built **and verified**. Legend: `[ ]` todo · `[x]` done · `[~]` blocked (reason inline).
+Agents tick each box as soon as the item is built **and verified**. Legend: `[ ]` todo · `[x]` done · `[~]` blocked (reason inline) · `[d]` built, typechecks and bundles, awaiting on-device verification.
 Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 
 ## Phase 0 — Scoping & direction
@@ -36,49 +36,49 @@ Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 - [x] Skia grain + lamp-glow primitives
 
 ## Phase 4 — Auth, onboarding, lock
-- [ ] Auth client (SecureStore session, JWT refresh) + email sign-up/in/reset/verify
+- [d] Auth client (SecureStore session, JWT refresh) + email sign-up/in/reset/verify
 - [~] Google sign-in (waiting: OAuth client IDs from user after SHA-1 handoff)
-- [ ] The Descent onboarding
-- [ ] Vault door: biometric/PIN lock
+- [d] The Descent onboarding
+- [d] Vault door: biometric/PIN lock
 
 ## Phase 5 — Preserve ritual (capture)
-- [ ] Words + live speech-to-text
-- [ ] Photos (≤5, resized 1600 px, upload with progress)
-- [ ] Voice (≤60 s, waveform)
-- [ ] Place, people, weight, mood light, video links
-- [ ] Seal hold + duck-dispense animation + descent into Vault
-- [ ] Edit (reopen seal), release with undo (soft delete)
-- [ ] Limit states: daily cap seals, quota gauge, friendly blocks
+- [d] Words + live speech-to-text
+- [d] Photos (≤5, resized 1600 px, upload with progress)
+- [d] Voice (≤60 s, waveform)
+- [d] Place, people, weight, mood light, video links
+- [d] Seal hold + duck-dispense animation + descent into Vault
+- [d] Edit (reopen seal), release with undo (soft delete)
+- [d] Limit states: daily cap seals, quota gauge, friendly blocks
 
 ## Phase 6 — Vault & relic view
-- [ ] Vault shaft (levels = months), niches, lamps, parallax, lift peek
-- [ ] Relic view with per-vessel reveal + catalog card
-- [ ] Filters: person, place, mood, vessel; text search
-- [ ] Empty / loading / error / offline states
+- [d] Vault shaft (levels = months), niches, lamps, parallax, lift peek
+- [d] Relic view with per-vessel reveal + catalog card
+- [d] Filters: person, place, mood, vessel; text search
+- [d] Empty / loading / error / offline states
 
 ## Phase 7 — Ledger, unearthing, sharing
-- [ ] Ledger year-of-lamps + month + day (CalendarSource interface)
-- [ ] Unearthing daily card (on this day / resurfaced relic)
-- [ ] Share cards (Plate + Letter), export via share sheet
+- [d] Ledger year-of-lamps + month + day (CalendarSource interface)
+- [d] Unearthing daily card (on this day / resurfaced relic)
+- [d] Share cards (Plate + Letter), export via share sheet
 
 ## Phase 7b — Approved extras
-- [ ] Sealed relics (time-locked until date; enforced server-side)
-- [ ] Keeper's prompts (daily rotating prompt; feeds notifications + widget)
-- [ ] Constellations (threads by person/place)
-- [ ] Vault export (ZIP of JSON + media via `account` function)
+- [d] Sealed relics (time-locked; media signing refused server-side until the date)
+- [d] Keeper's prompts (daily rotating prompt; feeds notifications + widget)
+- [d] Constellations (threads by person/place)
+- [d] Vault export (ZIP of JSON + media via `account` function)
 
 ## Phase 8 — Notifications & widgets
-- [ ] Local notifications: on this day, anniversaries, gentle nudges, user reminders; settings
-- [ ] Widgets: relic of the day, on this day, quick capture, flame/vault stats
+- [d] Local notifications: on this day, anniversaries, gentle nudges, user reminders; settings
+- [d] Widgets: relic of the day, on this day, quick capture, flame/vault stats
 
 ## Phase 9 — Keeper's quarters & legal
-- [ ] Settings: reminders, lock, plan + quota gauge, premium waitlist, export, delete account
-- [ ] GitHub Pages `site/`: privacy policy, account deletion, terms (contact email placeholder)
+- [d] Settings: reminders, lock, plan + quota gauge, premium waitlist, export, delete account
+- [x] GitHub Pages `site/`: privacy policy, account deletion, terms (contact email placeholder)
 
 ## Phase 10 — Release
 - [ ] QA pass on device (all flows, a11y, reduce-motion)
-- [ ] Upload keystore + release AAB builds
-- [ ] Store listing copy, feature graphic, icon 512
+- [d] Upload keystore (`~/.relic-keys` + signing plugin) — release AAB pending
+- [d] Store listing copy (`docs/store-listing.md`), feature graphic base, icon 512 — title overlay pending
 - [ ] Device screenshots (phone) → README
 - [ ] README complete; final push
 - [~] Pre-publish TODOs for user: contact email, Resend API key + SMTP, Play Console upload

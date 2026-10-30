@@ -24,7 +24,10 @@
       "predictiveBackGestureEnabled": true,
       "blockedPermissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "android.permission.SYSTEM_ALERT_WINDOW"
       ]
     },
     "plugins": [
@@ -73,7 +76,73 @@
           "speechRecognitionPermission": "Relic turns your speech into text for quick entries."
         }
       ],
-      "expo-notifications"
+      "./plugins/withReleaseSigning",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/android-icon-monochrome.png",
+          "color": "#F2A54A"
+        }
+      ],
+      [
+        "react-native-android-widget",
+        {
+          "fonts": [
+            "./node_modules/@expo-google-fonts/im-fell-dw-pica/400Regular/IMFellDWPica_400Regular.ttf",
+            "./node_modules/@expo-google-fonts/newsreader/400Regular/Newsreader_400Regular.ttf",
+            "./node_modules/@expo-google-fonts/ibm-plex-mono/500Medium/IBMPlexMono_500Medium.ttf"
+          ],
+          "widgets": [
+            {
+              "name": "RelicOfTheDay",
+              "label": "Relic of the day",
+              "description": "The relic that surfaced from your Vault today.",
+              "minWidth": "250dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 2,
+              "resizeMode": "horizontal|vertical",
+              "previewImage": "./assets/art/vessel-letter.webp",
+              "updatePeriodMillis": 3600000
+            },
+            {
+              "name": "OnThisDay",
+              "label": "On this day",
+              "description": "What you kept on this day in years past.",
+              "minWidth": "250dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 2,
+              "resizeMode": "horizontal|vertical",
+              "previewImage": "./assets/art/vessel-plate.webp",
+              "updatePeriodMillis": 3600000
+            },
+            {
+              "name": "QuickCapture",
+              "label": "Quick capture",
+              "description": "Preserve a relic with words, voice or a photo.",
+              "minWidth": "250dp",
+              "minHeight": "72dp",
+              "targetCellWidth": 4,
+              "targetCellHeight": 1,
+              "resizeMode": "horizontal",
+              "previewImage": "./assets/art/wax-seal.webp"
+            },
+            {
+              "name": "VaultStats",
+              "label": "Vault flame",
+              "description": "Your flame, your relics, and the duck.",
+              "minWidth": "110dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 2,
+              "targetCellHeight": 2,
+              "resizeMode": "horizontal|vertical",
+              "previewImage": "./assets/art/duck-hero.webp",
+              "updatePeriodMillis": 3600000
+            }
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
