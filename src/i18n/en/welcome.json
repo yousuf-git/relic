@@ -1,0 +1,88 @@
+{
+  "descent": {
+    "skip": "Skip",
+    "skipHint": "Skip the introduction",
+    "next": "Descend",
+    "nextHint": "Go to the next part of the introduction",
+    "progress": "Part {{current}} of {{total}}",
+    "companion": "Your companion, a yellow rubber duck on a weathered dispenser",
+    "beat0": {
+      "place": "The surface",
+      "up": "Up there, everything is forgotten.",
+      "down": "Down here, what you keep, remains."
+    },
+    "beat1": {
+      "place": "The niches",
+      "title": "Every memory becomes a relic.",
+      "body": "A letter, a photograph, a voice, a place. Each is set in its own lit niche, deeper the further back it goes."
+    },
+    "beat2": {
+      "place": "The door",
+      "title": "Only you hold the key.",
+      "body": "Your vault is private to you, and you can bolt its door with your fingerprint or screen lock.",
+      "create": "Become a Keeper",
+      "createHint": "Create your account",
+      "signIn": "I already keep a vault",
+      "signInHint": "Sign in to your vault"
+    }
+  },
+  "register": {
+    "eyebrow": "The Keepers' register",
+    "back": "Back"
+  },
+  "fields": {
+    "name": { "label": "Name", "placeholder": "What shall we call you" },
+    "email": { "label": "Email", "placeholder": "you@example.com" },
+    "password": { "label": "Password", "placeholder": "At least 8 characters", "show": "Show", "hide": "Hide", "showLabel": "Show password", "hideLabel": "Hide password" }
+  },
+  "strength": {
+    "empty": "At least 8 characters. Something only you would know.",
+    "short": "A few more characters. Eight at least.",
+    "fair": "It holds, but it could run deeper.",
+    "good": "It holds well.",
+    "strong": "It holds like stone."
+  },
+  "validation": {
+    "nameRequired": "Every Keeper is written in by name.",
+    "emailRequired": "The register needs an email.",
+    "emailInvalid": "That doesn't look like an email address.",
+    "passwordRequired": "Choose a password.",
+    "passwordShort": "A password needs at least 8 characters.",
+    "passwordLong": "That password is too long. Keep it under 128 characters."
+  },
+  "errors": {
+    "exists": "A Keeper with that email is already in the register. Try signing in instead.",
+    "mismatch": "That email and password don't match the register. Check them and try again.",
+    "unverified": "Confirm your email first. A letter is waiting in your inbox.",
+    "tooMany": "Too many attempts. Wait a moment, then try again."
+  },
+  "signUp": {
+    "title": "Sign the register.",
+    "body": "Every Keeper is written in once. Then the vault is yours.",
+    "submit": "Sign the register",
+    "switchPrompt": "Already a Keeper?",
+    "switchAction": "Sign in"
+  },
+  "signIn": {
+    "title": "Welcome back, Keeper.",
+    "body": "Sign your name and the door will open.",
+    "submit": "Enter the vault",
+    "forgot": "Lost your key?",
+    "switchPrompt": "New here?",
+    "switchAction": "Become a Keeper"
+  },
+  "reset": {
+    "title": "Lost your key?",
+    "body": "Give us the email from the register and we will send a letter to set a new password.",
+    "submit": "Send the letter",
+    "sentTitle": "A letter is on its way.",
+    "sentBody": "If {{email}} is in the register, a link to set a new password will arrive shortly. It can take a minute or two. Check your spam folder as well.",
+    "sentArt": "A folded letter, tied with red thread",
+    "backToSignIn": "Back to sign in",
+    "anotherEmail": "Use another email"
+  },
+  "google": {
+    "continue": "Continue with Google",
+    "or": "or"
+  }
+}

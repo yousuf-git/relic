@@ -1,5 +1,3 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { SignUpScreen } from "@/features/welcome/SignUpScreen";
 
-export default function Route() {
-  return <Placeholder name="(welcome)/sign-up" />;
-}
+export default SignUpScreen;

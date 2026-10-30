@@ -1,5 +1,3 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { VaultDoor } from "@/features/lock/VaultDoor";
 
-export default function Route() {
-  return <Placeholder name="lock" />;
-}
+export default VaultDoor;

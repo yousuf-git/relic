@@ -1,5 +1,3 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { ResetScreen } from "@/features/welcome/ResetScreen";
 
-export default function Route() {
-  return <Placeholder name="(welcome)/reset" />;
-}
+export default ResetScreen;

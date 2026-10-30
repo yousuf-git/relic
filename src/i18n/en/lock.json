@@ -1,0 +1,25 @@
+{
+  "prompt": {
+    "unlock": { "title": "Open your vault", "subtitle": "Only you hold the key" },
+    "enable": { "title": "Bolt the vault door", "subtitle": "Confirm it is you to turn the lock on" },
+    "disable": { "title": "Unbolt the vault door", "subtitle": "Confirm it is you to turn the lock off" }
+  },
+  "door": {
+    "eyebrow": "The vault door",
+    "title": "The door is bolted.",
+    "body": "Use your fingerprint, face or screen lock to open it.",
+    "bodyDevice": "Use your screen lock to open it.",
+    "unbolt": "Unbolt the door",
+    "opened": "The door is open."
+  },
+  "notice": {
+    "cancelled": "The door stays bolted until you confirm it is you.",
+    "failed": "That did not open the door. Try again.",
+    "lockout": "Too many tries. Wait a moment, then try again."
+  },
+  "unavailable": {
+    "title": "This phone has no screen lock.",
+    "body": "A door needs a bolt. Set a fingerprint, PIN or pattern in your phone's settings, then turn the vault door back on in your quarters.",
+    "action": "Open the vault"
+  }
+}

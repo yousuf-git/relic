@@ -1,5 +1,3 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { DescentScreen } from "@/features/welcome/DescentScreen";
 
-export default function Route() {
-  return <Placeholder name="(welcome)/index" />;
-}
+export default DescentScreen;

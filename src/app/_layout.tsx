@@ -15,7 +15,11 @@ import { StyleSheet } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { color } from "@/design/tokens";
+import { LockGate } from "@/features/lock/LockGate";
 import "@/i18n";
+// Loaded eagerly so their sign-out cleanup also runs when a session expires at cold start.
+import "@/features/notifications";
+import "@/widgets/sync";
 import { restoreSession, useAuth } from "@/lib/auth";
 import { Grain } from "@/ui/Grain";
 import { ToastHost } from "@/ui/Toast";
@@ -66,6 +70,7 @@ export default function RootLayout() {
               <Stack.Screen name="lock" options={{ animation: "fade", gestureEnabled: false }} />
             </Stack.Protected>
           </Stack>
+          <LockGate />
           <ToastHost />
           <Grain />
         </QueryClientProvider>

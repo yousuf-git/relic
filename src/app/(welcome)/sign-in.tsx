@@ -1,5 +1,3 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { SignInScreen } from "@/features/welcome/SignInScreen";
 
-export default function Route() {
-  return <Placeholder name="(welcome)/sign-in" />;
-}
+export default SignInScreen;
