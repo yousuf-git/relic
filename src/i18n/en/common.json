@@ -1,0 +1,25 @@
+{
+  "app": { "name": "Relic", "tagline": "Up there, everything is forgotten. Down here, what you keep, remains." },
+  "actions": {
+    "continue": "Continue",
+    "back": "Back",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "undo": "Undo",
+    "retry": "Try again",
+    "share": "Share",
+    "edit": "Reopen",
+    "release": "Release"
+  },
+  "errors": {
+    "offline": "No signal down here. Your vault is safe; try again when you're connected.",
+    "generic": "Something slipped. Try again.",
+    "sessionEnded": "Your session ended. Sign in again."
+  },
+  "nav": { "vault": "Vault", "ledger": "Ledger", "unearth": "Unearth", "quarters": "Quarters", "preserve": "Preserve a relic" },
+  "catalog": {
+    "relicNo": "RELIC Nº {{n}}",
+    "level": "LEVEL {{n}}"
+  }
+}

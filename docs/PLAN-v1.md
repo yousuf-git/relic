@@ -28,12 +28,12 @@ Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 - [x] `vault` /account (export ZIP, delete) + nightly purge trigger; waitlist is a plain RLS table
 
 ## Phase 3 — Design system & assets
-- [ ] Tokens, typography (bundled OFL fonts), motion system, haptics map
-- [ ] Contrast check of palette (WCAG AA)
-- [ ] Custom icon set (SVG)
-- [ ] Duck hero assets (cursor-agent): icon, splash, onboarding, empty states, ageing stages, seal sequence frames
-- [ ] Vessel art: letter, glass plate, echo shell, map shard, locket, reel canister; stone/paper textures
-- [ ] Skia grain + lamp-glow primitives
+- [x] Tokens, typography (bundled OFL fonts), motion system, haptics map
+- [x] Contrast check of palette (WCAG AA) — all text pairs ≥ 5.5:1; `faint` (4.05:1) large/decorative only
+- [x] Custom icon set (SVG, `src/ui/Icon.tsx`)
+- [x] Duck hero assets (cursor-agent): icon, adaptive icon + monochrome, splash, hero, niche, 3 ageing stages, tilt/dispense frame
+- [x] Vessel art: letter, glass plate, echo shell, map shard, locket, reel canister, wax seal; stone/paper textures; scenes; share backdrops
+- [x] Skia grain + lamp-glow primitives
 
 ## Phase 4 — Auth, onboarding, lock
 - [ ] Auth client (SecureStore session, JWT refresh) + email sign-up/in/reset/verify
