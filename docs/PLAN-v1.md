@@ -13,7 +13,7 @@ Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 
 ## Phase 1 — Foundations
 - [x] git init, push docs to `main` (via git:push skill)
-- [ ] Android SDK (cmdline-tools, platform, build-tools, NDK, CMake) in `~/Android`; `ANDROID_HOME` set
+- [x] Android SDK (cmdline-tools, platform-tools, NDK via Gradle) in `~/Android/Sdk`
 - [x] Expo SDK 58 app scaffold (TS strict, expo-router), lint + typecheck scripts (expo 58.0.21 / RN 0.88.1; project `.npmrc` overrides the 21-day release-age rule, approved by user)
 - [ ] Dev build installs and launches on user's phone via adb
 - [x] Neon `dev` branch; `neon.ts`: `hello` removed, `media` bucket, Data API on (`spike-auth` left to expire 2026-11-06)
@@ -24,8 +24,8 @@ Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 - [x] RLS on every table + RLS tests pass (user A cannot read/write user B) — `db/tests/rls.test.mjs` 8/8
 - [x] Triggers: 5/day free cap, 5 photos/memory, 1 voice ≤ 60 s (quota enforced in `media` function)
 - [x] Data API enabled with Neon Auth JWT; verified with real token
-- [ ] Function `media` (sign-upload, confirm, sign-read) + JWT verification + tests
-- [ ] Function `account` (export, delete) + `waitlist`
+- [x] Function `vault` /media (sign-upload with quota lock, confirm, sign-read, delete) + JWT verification — `db/tests/vault.test.mjs`
+- [x] `vault` /account (export ZIP, delete) + nightly purge trigger; waitlist is a plain RLS table
 
 ## Phase 3 — Design system & assets
 - [ ] Tokens, typography (bundled OFL fonts), motion system, haptics map

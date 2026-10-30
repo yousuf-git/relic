@@ -62,9 +62,9 @@ Last updated: 2026-10-30. Versions are the latest stable on npm as of this date.
 ### 3.3 Functions (anything that needs a secret)
 | Function | Purpose |
 |---|---|
-| `media` | `POST /sign-upload` (quota check, then a presigned PUT, a key under `u/<uid>/…`, and a pending media row); `POST /confirm` (HeadObject to get the real size and content type, then marks the row ready); `POST /sign-read` (batch presigned GETs, 1-hour expiry) |
-| `account` | `POST /export` (ZIP manifest); `POST /delete` (removes the user's objects, rows and auth user; also called from the web deletion page) |
-| `waitlist` | Premium waitlist sign-up |
+| `vault` `/media` | `POST /sign-upload` (quota check, then a presigned PUT, a key under `u/<uid>/…`, and a pending media row); `POST /confirm` (HeadObject to get the real size and content type, then marks the row ready); `POST /sign-read` (batch presigned GETs, 1-hour expiry) |
+| `vault` `/account` | `POST /export` (ZIP manifest); `POST /delete` (removes the user's objects, rows and auth user; also called from the web deletion page) |
+| `vault` `/cron/purge` | Nightly trigger: hard-delete relics released over 30 days ago and stale pending uploads |
 
 Each function verifies the JWT with `jose` against the injected `NEON_AUTH_JWKS_URL` and the issuer, and uses the pooled `DATABASE_URL`. The placeholder `hello` function is removed.
 

@@ -52,9 +52,16 @@
     "zustand": "^5.0.16"
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1160.0",
+    "@aws-sdk/s3-request-presigner": "^3.1160.0",
     "@neon/config": "^1.8.6",
     "@neon/env": "^1.5.3",
+    "@neon/functions": "^0.11.0",
+    "@types/pg": "^8.23.1",
     "@types/react": "~19.3.0",
+    "fflate": "^0.8.3",
+    "jose": "^6.2.14",
+    "pg": "^8.23.1",
     "typescript": "~6.0.3"
   }
 }

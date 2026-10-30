@@ -7,6 +7,12 @@ export default defineConfig({
   buckets: {
     media: { access: "private" },
   },
+  functions: {
+    vault: { name: "Relic vault", source: "./functions/vault/index.ts" },
+  },
+  triggers: {
+    "nightly-purge": { type: "schedule", function: "vault", cron: "30 21 * * *", functionPath: "/cron/purge" },
+  },
   // Branch policy: per-branch tuning
   branch: (branch) => {
     if (branch.isDefault) {
