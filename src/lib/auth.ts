@@ -102,10 +102,19 @@ export async function signInGoogleIdToken(idToken: string): Promise<User> {
   return adoptSession(res);
 }
 
+// Reset uses an emailed one-time code entered in the app, so no web reset page or deep link is needed.
 export async function requestPasswordReset(email: string): Promise<void> {
-  const res = await request("/request-password-reset", {
+  const res = await request("/email-otp/send-verification-otp", {
     method: "POST",
-    body: JSON.stringify({ email, redirectTo: `${config.authOrigin}/relic/reset` }),
+    body: JSON.stringify({ email, type: "forget-password" }),
+  });
+  if (!res.ok) await fail(res);
+}
+
+export async function resetPasswordWithCode(email: string, otp: string, password: string): Promise<void> {
+  const res = await request("/email-otp/reset-password", {
+    method: "POST",
+    body: JSON.stringify({ email, otp, password }),
   });
   if (!res.ok) await fail(res);
 }

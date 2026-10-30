@@ -73,10 +73,15 @@
   },
   "reset": {
     "title": "Lost your key?",
-    "body": "Give us the email from the register and we will send a letter to set a new password.",
-    "submit": "Send the letter",
+    "body": "Give us the email from the register and we will send a six-digit code to set a new key.",
+    "submit": "Send the code",
     "sentTitle": "A letter is on its way.",
-    "sentBody": "If {{email}} is in the register, a link to set a new password will arrive shortly. It can take a minute or two. Check your spam folder as well.",
+    "sentBody": "If {{email}} is in the register, a six-digit code is on its way. It can take a minute or two; check your spam folder as well.",
+    "codeLabel": "Code from the letter",
+    "codeInvalid": "The code is six digits.",
+    "codeWrong": "That code does not open this vault. Check the letter, or send a new one.",
+    "newPasswordLabel": "New key (password)",
+    "setKey": "Set the new key",
     "sentArt": "A folded letter, tied with red thread",
     "backToSignIn": "Back to sign in",
     "anotherEmail": "Use another email"

@@ -8,12 +8,12 @@ import { art } from "@/design/art";
 import { haptic } from "@/design/haptics";
 import { distance, duration, ease, spring, timing, useReducedMotion } from "@/design/motion";
 import { color, moodLight, space } from "@/design/tokens";
-import { requestPasswordReset } from "@/lib/auth";
+import { requestPasswordReset, resetPasswordWithCode, signInEmail } from "@/lib/auth";
 import { Button } from "@/ui/Button";
 import { Glow } from "@/ui/Glow";
 import { Field, Notice, RegisterPage } from "./Register";
 import { Vignette } from "./Scene";
-import { checkEmail, describeAuthError, type Failure } from "./validation";
+import { checkEmail, checkPassword, describeAuthError, type Failure } from "./validation";
 import "./strings";
 
 const LETTER = 168;
@@ -29,6 +29,13 @@ export function ResetScreen() {
   const [busy, setBusy] = useState(false);
   const [sentTo, setSentTo] = useState<string | null>(null);
   const emailRef = useRef<TextInputInstance>(null);
+  const [code, setCode] = useState("");
+  const [password, setPassword] = useState("");
+  const [codeTouched, setCodeTouched] = useState(false);
+  const codeRef = useRef<TextInputInstance>(null);
+  const passwordRef = useRef<TextInputInstance>(null);
+  const codeProblem = /^\d{6}$/.test(code.trim()) ? null : "codeInvalid";
+  const passwordProblem = checkPassword(password, { choosing: true });
 
   const problem = checkEmail(email);
   const error = failure?.field === "email" ? t(failure.key) : touched && problem ? t(`validation.${problem}`) : null;
@@ -54,6 +61,28 @@ export function ResetScreen() {
     setBusy(false);
   };
 
+  const setNewKey = async () => {
+    if (busy || !sentTo) return;
+    setCodeTouched(true);
+    if (codeProblem || passwordProblem) {
+      haptic.warn();
+      (codeProblem ? codeRef : passwordRef).current?.focus();
+      return;
+    }
+    Keyboard.dismiss();
+    setBusy(true);
+    setFailure(null);
+    try {
+      await resetPasswordWithCode(sentTo, code.trim(), password);
+      // The root layout moves to the vault once the session is adopted.
+      await signInEmail(sentTo, password);
+    } catch (e) {
+      haptic.warn();
+      setFailure(e instanceof Error && "code" in e && (e as { code: string }).code === "INVALID_OTP" ? { key: "reset.codeWrong" } : describeAuthError(e));
+      setBusy(false);
+    }
+  };
+
   const backToSignIn = () => (router.canGoBack() ? router.back() : router.replace("/sign-in"));
 
   return (
@@ -64,16 +93,62 @@ export function ResetScreen() {
       {sentTo ? (
         <>
           <LetterOnItsWay />
-          <Button label={t("reset.backToSignIn")} onPress={backToSignIn} />
+          <Field
+            ref={codeRef}
+            numeral="II"
+            label={t("reset.codeLabel")}
+            placeholder="000000"
+            value={code}
+            onChangeText={(v) => {
+              setCode(v.replace(/\D/g, "").slice(0, 6));
+              setFailure(null);
+            }}
+            onBlur={() => setCodeTouched(true)}
+            error={codeTouched && codeProblem ? t("reset.codeInvalid") : null}
+            keyboardType="number-pad"
+            autoComplete="one-time-code"
+            textContentType="oneTimeCode"
+            maxLength={6}
+            returnKeyType="next"
+            onSubmitEditing={() => passwordRef.current?.focus()}
+            editable={!busy}
+          />
+          <Field
+            ref={passwordRef}
+            numeral="III"
+            label={t("reset.newPasswordLabel")}
+            placeholder={t("fields.password.placeholder")}
+            value={password}
+            onChangeText={(v) => {
+              setPassword(v);
+              setFailure(null);
+            }}
+            error={codeTouched && passwordProblem ? t(`validation.${passwordProblem}`) : null}
+            secureTextEntry
+            autoComplete="new-password"
+            textContentType="newPassword"
+            autoCapitalize="none"
+            autoCorrect={false}
+            returnKeyType="go"
+            onSubmitEditing={setNewKey}
+            editable={!busy}
+          />
+          {failure && !failure.field ? <Notice message={t(failure.key)} /> : null}
+          <Button label={t("reset.setKey")} loading={busy} onPress={setNewKey} />
           <Button
             tone="quiet"
             label={t("reset.anotherEmail")}
             onPress={() => {
               setSentTo(null);
               setEmail("");
+              setCode("");
+              setPassword("");
               setTouched(false);
+              setCodeTouched(false);
+              setFailure(null);
             }}
           />
+          <Button tone="quiet" label={t("reset.backToSignIn")} onPress={backToSignIn} />
         </>
       ) : (
         <>
