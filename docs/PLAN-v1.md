@@ -9,21 +9,21 @@ Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 - [x] Auth spike: RN-compatible raw-HTTP flow proven (sign-up → cookie session → JWT)
 - [x] Research: Silo relics, memory/keepsake psychology
 - [x] DESIGN.md, TRD.md, PLAN-v1.md drafted
-- [ ] **Checkpoint 1: user approves design direction + duck treatment + feature ideas**
+- [x] **Checkpoint 1: design direction approved; PEZ-like stem kept; all 4 extras in v1**
 
 ## Phase 1 — Foundations
-- [ ] git init, push docs to `main` (via git:push skill)
+- [x] git init, push docs to `main` (via git:push skill)
 - [ ] Android SDK (cmdline-tools, platform, build-tools, NDK, CMake) in `~/Android`; `ANDROID_HOME` set
-- [ ] Expo SDK 58 app scaffold (TS strict, expo-router), lint + typecheck scripts
+- [x] Expo SDK 58 app scaffold (TS strict, expo-router), lint + typecheck scripts (expo 58.0.21 / RN 0.88.1; project `.npmrc` overrides the 21-day release-age rule, approved by user)
 - [ ] Dev build installs and launches on user's phone via adb
-- [ ] Neon `dev` branch; `neon.ts`: remove `hello`, add `media` bucket + functions; delete `spike-auth` branch
+- [x] Neon `dev` branch; `neon.ts`: `hello` removed, `media` bucket, Data API on (`spike-auth` left to expire 2026-11-06)
 - [ ] Trusted auth origin registered
 
 ## Phase 2 — Data layer & backend
-- [ ] Migrations: profiles, memories, media, people, places, memory_people, links, reminders, waitlist
-- [ ] RLS on every table + RLS tests pass (user A cannot read/write user B)
-- [ ] Triggers: 5/day free cap, 5 photos/memory, 60 s voice, 500 MB quota
-- [ ] Data API enabled with Neon Auth JWT; verified with real token
+- [x] Migrations: profiles, memories, media, people, memory_people, links, waitlist (places inline on memories; reminders in `profiles.notification_prefs`)
+- [x] RLS on every table + RLS tests pass (user A cannot read/write user B) — `db/tests/rls.test.mjs` 8/8
+- [x] Triggers: 5/day free cap, 5 photos/memory, 1 voice ≤ 60 s (quota enforced in `media` function)
+- [x] Data API enabled with Neon Auth JWT; verified with real token
 - [ ] Function `media` (sign-upload, confirm, sign-read) + JWT verification + tests
 - [ ] Function `account` (export, delete) + `waitlist`
 
@@ -60,6 +60,12 @@ Related docs: [DESIGN.md](DESIGN.md), [TRD.md](TRD.md).
 - [ ] Ledger year-of-lamps + month + day (CalendarSource interface)
 - [ ] Unearthing daily card (on this day / resurfaced relic)
 - [ ] Share cards (Plate + Letter), export via share sheet
+
+## Phase 7b — Approved extras
+- [ ] Sealed relics (time-locked until date; enforced server-side)
+- [ ] Keeper's prompts (daily rotating prompt; feeds notifications + widget)
+- [ ] Constellations (threads by person/place)
+- [ ] Vault export (ZIP of JSON + media via `account` function)
 
 ## Phase 8 — Notifications & widgets
 - [ ] Local notifications: on this day, anniversaries, gentle nudges, user reminders; settings

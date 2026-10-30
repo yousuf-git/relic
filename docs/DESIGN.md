@@ -1,6 +1,6 @@
 # Relic — Narrative & Design Direction
 
-> Status: **awaiting approval** (checkpoint 1). Nothing below is built yet.
+> Status: **approved 2026-10-30** (checkpoint 1).
 
 ## 1. Narrative
 
@@ -30,7 +30,7 @@ Reference photos: `local/relic-ref/*`. A yellow rubber-duck head on a weathered 
 - **Signature mechanic**: a dispenser *dispenses*. When you seal a memory, the duck's head tilts back and a small relic token slides out, then drops into the Vault. Pull-to-refresh and the "Unearthing" tilt the head the same way.
 - **Ageing system**: the duck weathers with your vault. It starts clean, then gains patina at 30, 100 and 365 relics. It is the one visual that shows long-term commitment, without using a streak-shame mechanic.
 - **The nut on the thread**: the "anchor". It is used as the bullet or marker glyph and the share-card mark.
-- **Trademark**: the reference stem has the **PEZ** logo embossed on it. Generated assets keep the silhouette and the patina but **replace the logo with a blank or Relic-glyph stem** (see the decision in the checkpoint message).
+- **Trademark**: the reference stem has the **PEZ** logo embossed on it. Decision (user, 2026-10-30): keep **PEZ-like embossed lettering** on the stem, accepting the trademark and store-policy risk. The real PEZ wordmark/logo is not reproduced exactly.
 
 ### Relic vessels (memory types become objects)
 | Content | Vessel | Reveal motion |
@@ -91,9 +91,9 @@ A memory with several kinds of content takes its **primary vessel** from the ric
 
 **Sound**: optional ambient room tone and seal thunk, off by default.
 
-## 4. Feature ideas beyond the brief (for your yes/no)
+## 4. Extra features (all four approved for v1)
 1. **Sealed relics**: lock a relic until a future date (a capsule to your future self). Fits the private vault.
 2. **Keeper's prompts**: one rotating prompt a day ("The smell of a kitchen you grew up in"). Feeds notifications and the widget.
 3. **Constellations**: automatic threads by person or place ("12 relics with Ammi"). Built from tags; no AI.
 4. **Vault export**: a ZIP of JSON plus media. Builds data-ownership trust (a privacy-policy selling point).
-5. **Material haptics**: each vessel has its own haptic texture on lift and seal.
+5. **Material haptics** (part of the motion system): each vessel has its own haptic texture on lift and seal.
