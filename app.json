@@ -1,0 +1,82 @@
+{
+  "expo": {
+    "name": "Relic",
+    "slug": "relic",
+    "scheme": "relic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0D0B09",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.yousuf.relic"
+    },
+    "android": {
+      "package": "app.yousuf.relic",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0D0B09",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": true,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-localization",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0D0B09",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Relic uses the microphone to record voice relics."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Relic lets you add photos to your memories.",
+          "cameraPermission": "Relic lets you take photos for your memories."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Relic can tag where a memory happened."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Relic can lock your vault with Face ID."
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Relic uses the microphone so you can speak your memories.",
+          "speechRecognitionPermission": "Relic turns your speech into text for quick entries."
+        }
+      ],
+      "expo-notifications"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
