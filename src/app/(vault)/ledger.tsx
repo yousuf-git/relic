@@ -1,5 +1,5 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { LedgerScreen } from "@/features/ledger/LedgerScreen";
 
 export default function Route() {
-  return <Placeholder name="(vault)/ledger" />;
+  return <LedgerScreen />;
 }

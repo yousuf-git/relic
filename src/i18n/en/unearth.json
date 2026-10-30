@@ -1,0 +1,58 @@
+{
+  "eyebrow": "Unearthing",
+  "title": "Unearth",
+  "ritual": {
+    "surfaced": "A relic surfaced from Level {{level}}",
+    "untitled": "Untitled relic",
+    "open": "Open the relic",
+    "reason": {
+      "onThisDay_one": "On this day, {{count}} year ago",
+      "onThisDay_other": "On this day, {{count}} years ago",
+      "deep": "Kept {{ago}}"
+    },
+    "openHint": "Opens {{title}}"
+  },
+  "unlock": {
+    "title_one": "A sealed relic opens today",
+    "title_other": "{{count}} sealed relics open today",
+    "body_one": "You sealed it {{ago}}, for a day like this one. The seal is gone now.",
+    "body_other": "You sealed the oldest {{ago}}, for a day like this one. The seals are gone now.",
+    "open": "Open {{title}}"
+  },
+  "states": {
+    "loading": "Digging…",
+    "errorTitle": "The Vault is out of reach",
+    "retry": "Try again",
+    "emptyTitle": "Nothing has surfaced yet",
+    "emptyBody": "The Vault returns what you keep. Preserve a relic, and in time it will rise back to you.",
+    "emptyCta": "Preserve a relic",
+    "settlingTitle": "Your relics are still settling",
+    "settlingBody": "New relics rest in the dark for a few days before they rise. Come back tomorrow."
+  },
+  "prompt": {
+    "title": "Today's prompt"
+  },
+  "constellations": {
+    "title": "Constellations",
+    "subtitle": "Threads between the relics you keep.",
+    "person_one": "{{count}} relic with {{name}}",
+    "person_other": "{{count}} relics with {{name}}",
+    "place_one": "{{count}} relic at {{name}}",
+    "place_other": "{{count}} relics at {{name}}",
+    "hint": "Shows these relics in the Vault",
+    "empty": "A thread appears when two relics share a person or a place. Add who and where as you preserve."
+  },
+  "flame": {
+    "title": "The flame",
+    "chip_one": "Flame: {{count}} day",
+    "lit_one": "{{count}} day kept in a row",
+    "lit_other": "{{count}} days kept in a row",
+    "litToday": "The flame is lit for today.",
+    "waiting": "Your flame is waiting for today's relic.",
+    "resting": "The flame is resting. A single relic lights it again, and every day you kept still counts.",
+    "none": "Preserve a relic to light your first flame.",
+    "longest_one": "Longest run: {{count}} day",
+    "longest_other": "Longest run: {{count}} days",
+    "chip_other": "Flame: {{count}} days"
+  }
+}

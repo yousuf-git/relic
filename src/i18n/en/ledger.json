@@ -1,0 +1,69 @@
+{
+  "title": "The Ledger",
+  "eyebrow": "A year of lamps",
+  "year": {
+    "previous": "Previous year",
+    "next": "Next year",
+    "label": "Year {{year}}"
+  },
+  "summary": {
+    "relics_one": "{{count}} relic kept",
+    "relics_other": "{{count}} relics kept",
+    "days_one": "{{count}} day lit",
+    "days_other": "{{count}} days lit",
+    "none": "No lamps lit this year"
+  },
+  "wall": {
+    "caption": "One lamp for every day. The heavier the day, the brighter it burns.",
+    "hint": "Tap a month, or pinch outward, to look closer.",
+    "monthLabel_one": "{{month}} {{year}}, {{count}} relic kept",
+    "monthLabel_other": "{{month}} {{year}}, {{count}} relics kept",
+    "monthLabelEmpty": "{{month}} {{year}}, no relics kept",
+    "monthHint": "Opens the month"
+  },
+  "month": {
+    "back": "Back to {{year}}",
+    "previous": "Previous month",
+    "next": "Next month",
+    "hint": "Pinch inward to return to the year."
+  },
+  "day": {
+    "label_one": "{{date}}, {{count}} relic",
+    "label_other": "{{date}}, {{count}} relics",
+    "labelEmpty": "{{date}}, nothing kept",
+    "labelToday": "{{date}}, today",
+    "hint": "Opens this day"
+  },
+  "sheet": {
+    "close": "Close",
+    "kept_one": "{{count}} relic kept on this day",
+    "kept_other": "{{count}} relics kept on this day",
+    "empty": "Nothing was kept on this day.",
+    "emptyToday": "Nothing kept yet today. The lamp is waiting.",
+    "emptyFuture": "This day hasn't come yet. The lamp is waiting for it.",
+    "preserve": "Preserve a relic for this day",
+    "another": "Add another relic for this day",
+    "sealedTitle": "A sealed relic",
+    "sealedUntil": "Sealed until {{date}}",
+    "untitled": "Untitled relic",
+    "open": "Open {{title}}",
+    "openHint": "Opens the relic"
+  },
+  "states": {
+    "loading": "Lighting the lamps…",
+    "emptyTitle": "No lamp is lit yet",
+    "emptyBody": "Every day below is waiting for its first relic. Keep one, and its lamp will burn here.",
+    "emptyCta": "Preserve a relic",
+    "errorTitle": "The Ledger is out of reach",
+    "retry": "Try again"
+  },
+  "ago": {
+    "today": "today",
+    "day_one": "{{count}} day ago",
+    "day_other": "{{count}} days ago",
+    "month_one": "{{count}} month ago",
+    "month_other": "{{count}} months ago",
+    "year_one": "{{count}} year ago",
+    "year_other": "{{count}} years ago"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "channel": {
+    "name": "Reminders",
+    "description": "Gentle nudges, memories from this day, and sealed relics that open."
+  },
+  "nudge": {
+    "titles": [
+      "The Vault is quiet tonight",
+      "A lamp is waiting",
+      "Something worth keeping?",
+      "Tonight's thread"
+    ]
+  },
+  "onThisDay": {
+    "title_one": "{{count}} year ago today",
+    "title_other": "{{count}} years ago today",
+    "bodyTitled": "You kept “{{title}}”. Come and sit with it a while.",
+    "bodyUntitled": "A relic from Level {{level}} is waiting for you.",
+    "bodyMany": "{{count}} relics from this day are waiting for you."
+  },
+  "sealed": {
+    "title_one": "A sealed relic opens today",
+    "title_other": "{{count}} sealed relics open today",
+    "body_one": "You put it away {{ago}} for a day like this one. Open it when you are ready.",
+    "body_other": "You put the oldest away {{ago}}. The seals are gone; open them when you are ready."
+  },
+  "anniversary": {
+    "title_one": "One year ago today, you began keeping",
+    "title_other": "{{count}} years ago today, you began keeping",
+    "body_one": "{{count}} relic has found its level since.",
+    "body_other": "{{count}} relics have found their level since."
+  }
+}

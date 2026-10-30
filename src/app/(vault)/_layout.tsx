@@ -4,6 +4,9 @@ import { StyleSheet, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { color, minTarget, space } from "@/design/tokens";
 import { useProfile } from "@/features/account/profile";
+import { useLockStore } from "@/features/lock/store";
+import { useNotificationSync } from "@/features/notifications";
+import { useWidgetSync } from "@/widgets/sync";
 import { Icon, type IconName } from "@/ui/Icon";
 import { Pressable } from "@/ui/Pressable";
 import { Text } from "@/ui/Text";
@@ -17,6 +20,9 @@ const TABS: { name: string; icon: IconName; label: string }[] = [
 
 export default function VaultLayout() {
   useProfile();
+  useNotificationSync();
+  // With the vault door on, home-screen widgets hide relic titles.
+  useWidgetSync(useLockStore((s) => s.enabled));
   return (
     <Tabs screenOptions={{ headerShown: false, sceneStyle: { backgroundColor: color.shaft } }} tabBar={(p) => <TabBar state={p.state} navigateToTab={p.navigateToTab} />}>
       {TABS.map((t) => (

@@ -1,0 +1,36 @@
+{
+  "untitled": "Untitled relic",
+  "relicOfTheDay": {
+    "label": "Relic of the day",
+    "empty": "Preserve a relic and it will rise here.",
+    "private": "A relic is waiting for you.",
+    "a11y": "Relic of the day: {{title}}. Opens the relic.",
+    "a11yEmpty": "Relic of the day. Opens Relic."
+  },
+  "onThisDay": {
+    "label": "On this day",
+    "yearsAgo_one": "{{count}} year ago",
+    "yearsAgo_other": "{{count}} years ago",
+    "empty": "Nothing kept on this day yet. Today will be remembered.",
+    "private": "A relic from this day is waiting.",
+    "a11y": "On this day: {{summary}}. Opens Unearth.",
+    "a11yEmpty": "On this day. Nothing kept yet. Opens Relic."
+  },
+  "quickCapture": {
+    "words": "Words",
+    "voice": "Voice",
+    "photo": "Photo",
+    "a11yWords": "Preserve a relic with words",
+    "a11yVoice": "Preserve a relic with your voice",
+    "a11yPhoto": "Preserve a relic with a photo"
+  },
+  "stats": {
+    "flame_one": "day kept",
+    "flame_other": "days kept",
+    "flameNone": "Light the flame",
+    "relics_one": "relic",
+    "relics_other": "relics",
+    "a11y_one": "Vault: {{count}} relic, flame kept {{flame}} days in a row. Opens Unearth.",
+    "a11y_other": "Vault: {{count}} relics, flame kept {{flame}} days in a row. Opens Unearth."
+  }
+}

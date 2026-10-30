@@ -1,5 +1,5 @@
-import { Placeholder } from "@/ui/Placeholder";
+import { UnearthScreen } from "@/features/unearth/UnearthScreen";
 
 export default function Route() {
-  return <Placeholder name="(vault)/unearth" />;
+  return <UnearthScreen />;
 }
