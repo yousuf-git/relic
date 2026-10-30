@@ -1,5 +1,5 @@
-import { Placeholder } from "@/ui/Placeholder";
+import QuartersScreen from "@/features/quarters/QuartersScreen";
 
 export default function Route() {
-  return <Placeholder name="(vault)/quarters" />;
+  return <QuartersScreen />;
 }

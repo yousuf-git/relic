@@ -1,0 +1,170 @@
+{
+  "header": {
+    "label": "KEEPER'S QUARTERS",
+    "title": "Quarters",
+    "line": "A quiet room off the shaft."
+  },
+  "retry": "Try again",
+  "cancel": "Cancel",
+  "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  "keeper": {
+    "label": "KEEPER",
+    "fallbackName": "Keeper",
+    "editName": "Edit your name",
+    "nameLabel": "Your name",
+    "namePlaceholder": "What should the vault call you?",
+    "saveName": "Save name",
+    "cancelName": "Cancel editing",
+    "nameKept": "Name kept.",
+    "nameFailed": "Couldn't save your name. Check your signal and try again.",
+    "since": "KEEPER SINCE {{month}} {{year}}",
+    "relicsKeptOne": "1 RELIC KEPT",
+    "relicsKeptOther": "{{n}} RELICS KEPT",
+    "duckAlt": "Your duck, {{stage}}",
+    "stageLabel": "THE DUCK · {{stage}}",
+    "loadFailed": "Your quarters can't reach the vault right now. Check your signal.",
+    "stage": {
+      "clean": {
+        "name": "Clean",
+        "line": "New from the shelf. It weathers as your vault fills: patina at 30 relics, wear at 365."
+      },
+      "patina": {
+        "name": "Patina",
+        "line": "Verdigris has found the stem and the duck has gone dull with handling. It wears in earnest at 365 relics."
+      },
+      "worn": {
+        "name": "Worn",
+        "line": "Worn smooth the way kept things are. It has been down every level with you."
+      }
+    },
+    "toNextOne": "1 more relic until it changes.",
+    "toNextOther": "{{n}} more relics until it changes."
+  },
+  "capacity": {
+    "label": "LAMP OIL",
+    "title": "Vault capacity",
+    "usedOf": "{{used}} MB of {{limit}} MB",
+    "usedOnly": "{{used}} MB used",
+    "left": "{{left}} MB left",
+    "unlimited": "No ceiling on your plan.",
+    "gaugeLabel": "Vault storage",
+    "gaugeValue": "{{used}} MB of {{limit}} MB used",
+    "note": "Words cost almost nothing. Photos and voice recordings are what burn the oil.",
+    "low": "Running low. Words still fit; photos and voice may not.",
+    "full": "The lamp is out of oil. New photos and voice recordings won't fit until you free some space.",
+    "error": "The gauge can't be read right now. Check your signal.",
+    "sealsLabel": "TODAY'S SEALS",
+    "sealsCount": "{{n}} of {{limit}} relics kept today",
+    "sealsOpen": "{{n}} relics kept today. No daily limit on your plan.",
+    "sealsSpent": "Every seal is used. They return with tomorrow's light."
+  },
+  "waitlist": {
+    "label": "DEEPER VAULTS",
+    "title": "A larger vault is being dug",
+    "body": "Premium isn't open yet. Add your name and we'll write to the email on this account the day it is. No payment now, no obligation.",
+    "join": "Join the waitlist",
+    "joining": "Joining…",
+    "joined": "You're on the list.",
+    "joinedLine": "We'll write to you when deeper vaults open.",
+    "leave": "Leave the list",
+    "failed": "Couldn't update the waitlist. Check your signal and try again.",
+    "loadFailed": "Couldn't check the waitlist right now."
+  },
+  "reminders": {
+    "label": "REMINDERS",
+    "title": "A nudge, not a nag",
+    "body": "Reminders are scheduled on this phone. Nothing is sent from our servers.",
+    "daily": "Daily reminder",
+    "dailyHint": "A quiet prompt to keep something from today.",
+    "time": "Nudge time",
+    "timeHint": "Your phone's clock, every day.",
+    "timeA11y": "Nudge time, {{time}}. Opens the time picker.",
+    "onThisDay": "On this day",
+    "onThisDayHint": "A relic from this date in a past year surfaces.",
+    "sealed": "Sealed relics",
+    "sealedHint": "When a sealed relic's date arrives.",
+    "anniversaries": "Anniversaries",
+    "anniversariesHint": "A note on the day you first descended, and at milestones.",
+    "denied": "Reminders need notification permission.",
+    "openSettings": "Settings",
+    "failed": "Couldn't save that. Check your signal and try again."
+  },
+  "time": {
+    "title": "Nudge time",
+    "body": "When should the lamp be lit?",
+    "hour": "Hour",
+    "minute": "Minutes",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "set": "Set time",
+    "presets": "Common hours",
+    "presetMorning": "Morning",
+    "presetMidday": "Midday",
+    "presetEvening": "Evening",
+    "presetLate": "Late"
+  },
+  "lock": {
+    "label": "VAULT DOOR",
+    "title": "Bolt the door",
+    "body": "Ask for your fingerprint, face or screen lock each time Relic opens.",
+    "toggle": "Lock Relic with this phone's security",
+    "failed": "The door wouldn't bolt. Check that this phone has a screen lock or fingerprint set up."
+  },
+  "export": {
+    "label": "KEEP A COPY",
+    "title": "Export the vault",
+    "body": "One ZIP file: every relic as readable JSON, plus your photos and voice recordings. Yours to keep.",
+    "start": "Prepare export",
+    "preparing": "Gathering your relics. A large vault can take a minute.",
+    "preparingButton": "Preparing…",
+    "bringing": "Bringing it up: {{done}} of {{total}} MB",
+    "readyOne": "Ready: 1 relic, {{size}} MB.",
+    "readyOther": "Ready: {{n}} relics, {{size}} MB.",
+    "share": "Save or share the ZIP",
+    "again": "Prepare again",
+    "shareTitle": "Relic vault export",
+    "missing": "The file is gone from this phone. Prepare the export again.",
+    "unavailable": "Sharing isn't available on this device.",
+    "failed": "The export didn't make it up. Check your signal and try again.",
+    "progress": "Export progress"
+  },
+  "links": {
+    "label": "ABOUT",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "deletePage": "Account deletion page",
+    "opens": "Opens in your browser",
+    "failed": "Couldn't open that page. Check your signal."
+  },
+  "account": {
+    "signOut": "Sign out",
+    "signOutHint": "Your vault stays safe. Sign back in to open it."
+  },
+  "release": {
+    "label": "RELEASE THE VAULT",
+    "title": "Release the vault",
+    "body": "Close your account and let everything go. This can't be undone.",
+    "open": "Release the vault",
+    "sheetTitle": "Release the vault?",
+    "intro": "This deletes your account and everything in it, permanently:",
+    "goneRelics": "Every relic: its words, dates, places and weights.",
+    "goneMedia": "Every photo and voice recording, including the files in storage.",
+    "goneRest": "The people and links you saved, your settings, and your sign-in.",
+    "nothing": "There is no undo and no recovery. We can't bring it back, even if you write to us.",
+    "exportFirst": "If you want a copy, close this and export the vault first.",
+    "keep": "Keep my vault",
+    "continue": "Continue",
+    "confirmTitle": "Type RELEASE to confirm",
+    "confirmBody": "Once you confirm, the lamps go out. Everything is deleted now, not in thirty days.",
+    "word": "RELEASE",
+    "inputLabel": "Type RELEASE",
+    "confirm": "Release everything",
+    "releasing": "Releasing…",
+    "back": "Go back",
+    "failed": "The vault wasn't released. Check your signal and try again."
+  },
+  "footer": {
+    "version": "RELIC · VERSION {{version}}",
+    "care": "Made with care."
+  }
+}
